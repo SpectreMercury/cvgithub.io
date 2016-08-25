@@ -12,7 +12,7 @@ var button  = $('.fake-button .button');
 var page1 = $('.page1');
 var page2 = $('.page2');
 
-//auto_search();
+auto_search();
 function auto_search(){
     var i = 1;
     setInterval(function() {

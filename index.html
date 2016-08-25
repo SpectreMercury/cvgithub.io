@@ -1,414 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>我叫李嘉琦,这是我的个人页面,希望我们获得一次工作的机会</title>
-    <meta content="我叫李嘉琦,这是我的个人页面,希望我们获得一次工作的机会" name="keywords">
-    <meta content="我叫李嘉琦,这是我的个人页面,希望我们获得一次工作的机会" name="description">
-    <script src="js/responsive-nav.js"></script>
-    <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/font-awesome.css">
-    <link href="css/flexslider.css" rel="stylesheet" >
-    <link href="css/styles.css" rel="stylesheet">
-    <link href="css/queries.css" rel="stylesheet">
-    <link href="css/animate.css" rel="stylesheet">
-    <script src="js/responsive-nav.js"></script>
-
-    <script src="js/jquery-1.12.1.min.js"> </script>
-      </head>
-      <body id="top">
-
-        <header id="home">
-
-          <section class="hero" id="hero">
-            <nav class="nav right">
-              <ul>
-                <li class="current"><a id="must" href="#">首页</a></li>
-                <li><a href="#">客户服务</a></li>
-                <li><a href="#">产品展示</a></li>
-                <li><a href="#">经典案例</a></li>
-                <li><a href="#">联系我们</a></li>
-              </ul>
-              <script type="text/javascript">
-                  $('#must').mouseover(function(){
-                    $('#must').css("background","rgba(0, 0, 0, 0.3)")
-                  }).mouseout(function(){
-                    $('#must').css("background","black")
-                  })
-              </script>
-            </nav>
-            <div class="container less">
-                  <a id="nav-toggle" class="nav_slide_button" href="#"></a>
-
-              <div class="row lion">
-                <div class="col-md-8 col-md-offset-2 text-center inner">
-                  <h1 class="animated fadeInDown"><span style="color:black;">We do translate</span></h1>
-                  <p class="animated fadeInUp delay-05s" style="color:black;font-family:Chalkduster"><em>You enjoy the life</em></p>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-4 text-center">
-                  <a href="#" class="learn-more-btn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-envira" aria-hidden="true"style="font-size:x-large;margin-top:1px"></i>&nbsp;Customer&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
-
-                </div>
-                <div class="col-md-4 col-md-offset-4 text-center">
-                  <a href="#" class="learn-more-btn" style="width:240px" ><i class="fa fa-pencil" style="font-size:x-large"></i>&nbsp;Translater</a>
-                </div>
-              </div>
+<head>
+    <meta charset="UTF-8">
+    <title>Francis Lee</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css"/>
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>
+    <link rel="stylesheet/less" type="text/css" href="css/customer/style.less">
+    <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+    <script src="less.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="header-container">
+    <div class="main-header">
+        <div class="personal-details">Details</div>
+        <div class="personal-skills">Skills</div>
+        <div class="personal-experience">Experience</div>
+        <div class="personal-statement">Proposal</div>
+    </div>
+</div>
+<div class="page1">
+    <div class="fake-logo"></div>
+    <div class="fake-textarea">
+        <input class="text-area" type="text"/>
+    </div>
+    <div class="fake-button">
+        <input class="button" type="button" value="Thanks for viewing"/>
+    </div>
+</div>
+<div class="page2">
+    <div class="personal-details">
+        <div class="personal-info">
+            <div class="personal-portrait">
+                <img src="img/personal-photo.jpg"/>
             </div>
-          </section>
-        </header>
-
-        <section class="features text-center section-padding" id="features">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-12">
-                <h1 class="arrow">为什么选择我们</h1>
-                <p>在更安全的同时,我们还为您的翻译结果提供质量的保障</p>
-                <div class="features-wrapper">
-                  <div class="col-xs-3 wp2">
-                    <div class="icon">
-                      <i class="fa fa-calendar-plus-o" aria-hidden="true"></i>
-                    </div>
-                    <h2>预定翻译</h2>
-                    <p>发布您的需求<br/>我们将尽快为你匹配合适的翻译</p>
-                  </div>
-                  <div class="col-xs-3 wp2 delay-05s">
-                    <div class="icon">
-                      <i class="fa fa-check"></i>
-                    </div>
-                    <h2>确认选择</h2>
-                    <p>从匹配或者应征的翻译中<br/>选取最符合您邀请的一名<br/></p>
-                  </div>
-                  <div class="col-xs-3 wp2 delay-1s">
-                    <div class="icon">
-                      <i class="fa fa-pencil"></i>
-                    </div>
-                    <h2>翻译···</h2>
-                    <p>专业的翻译人员<br/>会在deadline之前完成您的任务</p>
-                  </div>
-                  <div class="col-xs-3 wp2 delay-2s">
-                    <div class="icon">
-                      <i class="fa fa-credit-card-alt"></i>
-                    </div>
-                    <h2>付款</h2>
-                    <p>在确认付款后<br/>您将可以查看您的翻译结果</p>
-                  </div>
-                  <div class="clearfix"></div>
-                </div>
-              </div>
+            <div class="personal-sentence">
+                When you find something is hard for you, you will find it worth in the end.
             </div>
-          </div>
-        </section>
-        
-        <section class="swag text-center">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-8 col-md-offset-2">
-                <p style="font-family:Chalkduster;color: #ffffff;font-size:16px;"> Hope is good thing, mabye the best of things. And no good thing ever dies.</p>
-                <a href="#portfolio" class="down-arrow-btn"><i class="fa fa-chevron-down"></i></a>
-              </div>
+            <div class="personal-profile">
+                <p class="personal-name"> <i class="fa fa-user" aria-hidden="true"></i> Name : Li Jiaqi </p>
+                <p class="personal-education"><i class="fa fa-graduation-cap" aria-hidden="true"></i>  Education Background : Master</p>
+                <p class="personal-university"><i class="fa fa-building" aria-hidden="true"></i> Graduate Institutions : University of Liverpool </p>
+                <p class="personal-major"> <i class="fa fa-desktop" aria-hidden="true"></i> Major : Advanced Computer Science </p>
             </div>
-          </div>
-        </section>
-        <section class="portfolio text-center section-padding" id="portfolio">
-          <div class="container">
-            <div class="row">
-              <div id="portfolioSlider">
-                <ul class="slides">
-                  <li>
-                    <div class="col-md-4 wp4">
-                      <div class="overlay-effect effects clearfix">
-                        <div class="img">
-                          <img src="img/aoman.jpg" alt="Portfolio Item">
-                          <div class="overlay">
-                            <a href="https://appsto.re/gb/VJ5d5.i" class="expand"><i class="fa fa-search"></i><br>View More</a>
-                            <a class="close-overlay hidden">x</a>
-                          </div>
-                        </div>
-                      </div>
-                      <h2>傲慢与偏见(2005)</h2>
-                      <p>The more I see of the world, the more I am dissatisfied with it. </br> 对这个世界看得越多 我就越不满  </p>
-                    </div>
-                    <div class="col-md-4 wp4 delay-05s">
-                      <div class="overlay-effect effects clearfix">
-                        <div class="img">
-                          <img src="img/oneday.jpg" alt="Portfolio Item">
-                          <div class="overlay">
-                            <a href="https://appsto.re/gb/VJ5d5.i" class="expand"><i class="fa fa-search"></i><br>View More</a>
-                            <a class="close-overlay hidden">x</a>
-                          </div>
-                        </div>
-                      </div>
-                      <h2>一天</h2>
-                      <p>I love you,Dexter,so much. I just don't like you anymore.</br> 我爱你,Dexter.我只是不在喜欢你了</p>
-                    </div>
-                    <div class="col-md-4 wp4 delay-1s">
-                      <div class="overlay-effect effects clearfix">
-                        <div class="img">
-                          <img src="img/leso.jpg" alt="Portfolio Item">
-                          <div class="overlay">
-                            <a href="https://appsto.re/gb/VJ5d5.i" class="expand"><i class="fa fa-search"></i><br>View More</a>
-                            <a class="close-overlay hidden">x</a>
-                          </div>
-                        </div>
-                      </div>
-                      <h2>放牛班的春天(2004)</h2>
-                      <p>You can't say,there are things worth trying.Never give up,always have hope in front of waiting.</br>世事不能说死，有些事情总值得尝试。永不轻言放弃，前方总有希望在等待。</p>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="col-md-4 wp4">
-                      <div class="overlay-effect effects clearfix">
-                        <div class="img">
-                          <img src="img/5ms.jpg" alt="Portfolio Item">
-                          <div class="overlay">
-                            <a href="https://appsto.re/gb/VJ5d5.i" class="expand"><i class="fa fa-search"></i><br>View More</a>
-                            <a class="close-overlay hidden">x</a>
-                          </div>
-                        </div>
-                      </div>
-                      <h2>秒速五厘米</h2>
-                      <p>思うにも私たちに送ったメールが届いて、心と心の间も1 cmに近づいてくるしかない</br>我们即使发了一千次短信，心与心之间大概也只能靠近1厘米</p>
-                    </div>
-                    <div class="col-md-4 wp4 delay-05s">
-                      <div class="overlay-effect effects clearfix">
-                        <div class="img">
-                          <img src="img/lanse.jpg" alt="Portfolio Item">
-                          <div class="overlay">
-                            <a href="https://appsto.re/gb/VJ5d5.i" class="expand"><i class="fa fa-search"></i><br>View More</a>
-                            <a class="close-overlay hidden">x</a>
-                          </div>
-                        </div>
-                      </div>
-                      <h2>蓝色生死恋</h2>
-                      <p>오빠는 다시 태어나면 뭐가 되고 싶어?나는 말야 나무가 될 거야.한번 뿌리내리면 다시는 움직이지 않는 나무가 될 거야.그래서 다시는 누구하고도 헤어지지 않을 거야.</br>哥哥下辈子想当什么？我啊，下辈子要当一棵树。一旦扎根就不会再移动的树。那样就不会再和别人分开. </p>
-                    </div>
-                    <div class="col-md-4 wp4 delay-1s">
-                      <div class="overlay-effect effects clearfix">
-                        <div class="img">
-                          <img src="img/bike.jpg" alt="Portfolio Item">
-                          <div class="overlay">
-                            <a href="https://appsto.re/gb/VJ5d5.i" class="expand"><i class="fa fa-search"></i><br>View More</a>
-                            <a class="close-overlay hidden">x</a>
-                          </div>
-                        </div>
-                      </div>
-                      <h2>偷自行车的人</h2>
-                      <p>Para todo existe remedio, menos la muerte.<br/>一切都有解决方案，除了死亡。
-                      </p>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </section>
-         <section class="swag1 text-center">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-8 col-md-offset-2">
-                <p style="font-family:Chalkduster;color: #ffffff;font-size:16px">Mama says life is a box of chocolate,you never know what you are gonna get.</p>
-                <a href="#team" class="down-arrow-btn"><i class="fa fa-chevron-down"></i></a>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="team text-center section-padding" id="team">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-12">
-                <h1 class="arrow">商务团队/城市负责人</h1>
-              </div>
-            </div>
-            <div class="row">
-              <div class="team-wrapper">
-                <div id="teamSlider">
-                  <ul class="slides">
-                  <li>
-                      <div class="col-md-4 wp5">
-                        <img src="img/team-05.png" alt="Team Member">
-                        <h2>吉安娜</h2>
-                        <p>Your people are despicable cowards, Orc! You're nothing more than rabid dogs, and you will be put down!</p>
-                        <div class="social">
-                          <ul class="social-buttons">
-                            <li><a href="#" class="social-btn"><i class="fa fa-mobile"></i></a></li>
-                            <li><a href="Mailto:celia.wang@biubiuapp.com?&Subject=Hello&Body=你好" class="social-btn" ><i class="fa fa-envelope"></i></a></li>
-                          </ul>
-                        </div>
-                      </div>
-                      
-                      <div class="col-md-4 wp5 delay-05s">
-                        <img src="img/team-02.png" alt="Team Member">
-                        <h2>莫罗斯</h2>
-                        <p>我说到哪里了？哦……啊，对了</p>
-                        <div class="social">
-                          <ul class="social-buttons">
-                            <li><a href="#" class="social-btn"><i class="fa fa-mobile"></i></a></li>
-                            <li><a href="Mailto:abby.chen@biubiuapp.com?&Subject=Hello&Body=你好" class="social-btn"><i class="fa fa-envelope"></i></a></li>
-                          </ul>
-                        </div>
-                      </div>
-                      <div class="col-md-4 wp5 delay-1s">
-                        <img src="img/team-03.png" alt="Team Member">
-                        <h2>凯恩 · 血蹄</h2>
-                        <p>You spit on mercy? Then you will have none! You want carnage? Garrosh will get more blood than he ever bargained for!</p>
-                        <div class="social">
-                          <ul class="social-buttons">
-                            <li><a href="#" class="social-btn"><i class="fa fa-mobile"></i></a></li>
-
-                            <li><a href="Mailto:hawk.yu@biubiuapp.com?&Subject=Hello&Body=你好" class="social-btn"><i class="fa fa-envelope"></i></a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="col-md-4 wp5">
-                        <img src="img/team-04.png" alt="Team Member">
-                        <h2>金心宇</h2>
-                        <p>谢菲尔德</p>
-                        <div class="social">
-                          <ul class="social-buttons">
-
-                            <li><a href="Mailto:303652270@qq.com?&Subject=Hello&Body=你好" class="social-btn"><i class="fa fa-envelope"></i></a></li>
-                          </ul>
-                        </div>
-                      </div>
-                      
-                      <div class="col-md-4 wp5 delay-05s">
-                        <img src="img/team-01.png" alt="Team Member">
-                        <h2>Bonnie</h2>
-                        <p>伦敦</p>
-                        <div class="social">
-                          <ul class="social-buttons">
-                            <li><a href="Mailto:bonniehan111@gmail.com?&Subject=Hello&Body=你好" class="social-btn"><i class="fa fa-envelope"></i></a></li>
-                          </ul>
-                        </div>
-                      </div>
-                      <div class="col-md-4 wp5 delay-1s">
-                        <img src="img/team-06.png" alt="Team Member">
-                        <h2>周煊</h2>
-                        <p>曼城</p>
-                        <div class="social">
-                          <ul class="social-buttons">
-                            <li><a href="Mailto:287047006@qq.com?&Subject=Hello&Body=你好" class="social-btn"><i class="fa fa-envelope"></i></a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="col-md-4 wp5">
-                        <img src="img/team-07.png" alt="Team Member">
-                        <h2>张骁</h2>
-                        <p>利物浦</p>
-                        <div class="social">
-                          <ul class="social-buttons">
-                            <li><a href="Mailto:723505734@qq.com?&Subject=Hello&Body=你好" class="social-btn"><i class="fa fa-envelope"></i></a></li>
-                          </ul>
-                        </div>
-                      </div>
-                      <div class="col-md-4 wp5 delay-05s">
-                        <img src="img/team-08.png" alt="Team Member">
-                        <h2>任哲玲</h2>
-                        <p>曼城</p>
-                        <div class="social">
-                          <ul class="social-buttons">
-                            <li><a href="Mailto:Candyren11@163.com?&Subject=Hello&Body=你好" class="social-btn"><i class="fa fa-envelope"></i></a></li>
-                          </ul>
-                        </div>
-                      </div>
-                      <div class="col-md-4 wp5 delay-1s">
-                        <img src="img/team-09.png" alt="Team Member">
-                        <h2>李柳欣</h2>
-                        <p>斯旺西</p>
-                        <div class="social">
-                          <ul class="social-buttons">
-                            <li><a href="Mailto:1124840327@qq.com?&Subject=Hello&Body=你好" class="social-btn"><i class="fa fa-envelope"></i></a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="subscribe text-center">
-          <div class="container">
-            <p style="font-family:Chalkduster;color: #ffffff;font-size:16px">I don't know if we each have a destiny, or if we're all just floating around accidentally―like on a breeze. </p>
-            <!--
-            <form action="#">
-              <input type="text" name="" value="" placeholder="" required>
-              <input type="submit" name="" value="Send">
-            </form> -->
-          </div>
-        </section>
-        <section class="dark-bg text-center section-padding contact-wrap" id="contact">
-          <a href="#top" class="up-btn"><i class="fa fa-chevron-up"></i></a>
-          <div class="container">
-            <div class="row">
-              <div class="col-md-12">
-                <h1 class="arrow">联系我们</h1>
-              </div>
-            </div>
-            <div class="row contact-details">
-              <div class="col-md-4">
-                <div class="light-box box-hover">
-                  <h2><i class="fa fa-map-marker"></i><span>Address</span></h2>
-                  <p>Woolwich House, 61 Mosley Street, Manchester, Lancashire, United Kingdom M2 3HZ</p>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="light-box box-hover">
-                  <h2><i class="fa fa-mobile"></i><span>Phone</span></h2>
-                  <p style="padding-bottom:23px">+44 (0) 161 228 7172</p>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="light-box box-hover">
-                  <h2><i class="fa fa-paper-plane"></i><span>Email</span></h2>
-                  <p style="padding-bottom:23px"><a href="Mailto:support@biubiuapp.com?&Subject=Hello&Body=你好">support@biubiuapp.com</a></p>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-12">
-                
-              </div>
-            </div>
-          </div>
-        </section>
-        <footer>
-          <div class="container">
-            <div class="row">
-              <div class="col-md-6">
-                <ul class="legals">
-                  <li><a href="http://biubiuapp.com/tosen.html">Terms &amp; Privacy</a></li>
-                  <li><a href="http://biubiuapp.com/blog/">Blog</a></li>
-                </ul>
-              </div>
-             
-            </div>
-          </div>
-        </footer>
-        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-        <script src="js/jquery.min.js"></script>
-        <!-- Include all compiled plugins (below), or include individual files as needed -->
-        <script src="js/waypoints.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/scripts.js"></script>
-        <script src="js/jquery.flexslider.js"></script>
-        <script src="js/modernizr.js"></script>
-        <script type="text/javascript">
-          (function(){
-            var a = 5;
-          })();
-          console.log(a)
-
-        </script>
-      </body>
-    </html>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>
