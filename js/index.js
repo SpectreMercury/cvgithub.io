@@ -11,8 +11,12 @@ var button  = $('.fake-button .button');
 
 var page1 = $('.page1');
 var page2 = $('.page2');
-
-auto_search();
+initPage();
+function initPage() {
+    auto_search();
+    clearInterval();
+    $('.main-header').on('click',_onClickChangePage);
+}
 function auto_search(){
     var i = 1;
     setInterval(function() {
@@ -22,10 +26,6 @@ function auto_search(){
                 "background": "#f2f2f2",
                 "border": '1px solid #4285f4'
             });
-            setTimeout(function(){
-                page1.css('display','none');
-                page2.addClass('active');
-            },1000)
             clearInterval();
             return
         }
@@ -34,6 +34,45 @@ function auto_search(){
             i++;
         }
     },300);
+    setTimeout(function(){
+            page1.css('display','none');
+            page2.addClass('active');
+            $('.main-header').css('visibility','visible');
+        },3500)
+}
+function _onClickChangePage(e) {
+    var curr_active = $('.main-header .active');
+    var curr_page = $('.container .active');
+    var curr_tar = $(e.target);
+    if(curr_tar.hasClass('active')) {
+        return
+    }
+    if(curr_tar.hasClass('personal-details')) {
+        curr_page.removeClass('active');
+        curr_active.removeClass('active');
+        curr_tar.addClass('active');
+        $('.page2').addClass('active');
+    } else if(curr_tar.hasClass('personal-education')) {
+        curr_page.removeClass('active');
+        curr_active.removeClass('active');
+        curr_tar.addClass('active');
+        $('.page3').addClass('active');
+    } else if(curr_tar.hasClass('personal-skills')) {
+        curr_page.removeClass('active');
+        curr_active.removeClass('active');
+        curr_tar.addClass('active');
+        $('.page4').addClass('active');
+    } else if(curr_tar.hasClass('personal-experience')) {
+        curr_page.removeClass('active');
+        curr_active.removeClass('active');
+        curr_tar.addClass('active');
+        $('.page5').addClass('active');
+    } else if(curr_tar.hasClass('personal-statement')) {
+        curr_page.removeClass('active');
+        curr_active.removeClass('active');
+        curr_tar.addClass('active');
+        $('.page6').addClass('active');
+    }
 }
 
 

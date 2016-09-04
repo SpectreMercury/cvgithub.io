@@ -1,54 +1,74 @@
 body {
-  background: #f5f5f5;
+  background: #c5d5a5;
   color: #000000;
 }
-.main-header {
-  visibility: hidden;
-  div {
-    display: inline-block;
-    width: 100px;
-    height: 56px;
-    color: #000000;
-    padding: 17px;
-    margin-left: 100px;
+h1 {
+  text-align: center;
+  font-size: 3.5em;
+  color: #54565b;
+  font-weight:900;
+  text-shadow: 1px 2px #98999b, 1px 2px #a8a8aa;
+}
+h5 {
+  text-align: center;
+  font-weight: 600;
+  color: white;
+}
 
-    &:hover {
-      cursor: pointer;
-      color: #000;
+.header-container {
+  width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: 300;
+  .main-header {
+    visibility: hidden;
+    div {
+      display: inline-block;
+      width: 200px;
+      height: 56px;
+      color: #000000;
+      padding: 17px;
+
+      &:hover {
+        cursor: pointer;
+        border-bottom:4px solid #000;
+      }
+      &.active {
+        font-weight:500;
+      }
     }
   }
 }
+
 .page1 {
   .fake-logo {
     background: url('../../img/google.png') 50% 0%no-repeat;
     background-size: 272px 92px;
-    width: 1200px;
+    width: 1100px;
     height: 92px;
     margin: 0 auto;
-    margin-top:100px;
+    margin-top: 100px;
   }
   .fake-textarea {
-    width: 1200px;
-    margin:0 auto;
-    margin-top:20px;
+    width: 1100px;
+    margin: 0 auto;
+    margin-top: 20px;
     text-align: center;
 
     .text-area {
       width: 544px;
       height: 37px;
       left: 50%;
-      background:#fff;
-      border:1px solid #d9d9d9;
+      background: #fff;
+      border: 1px solid #d9d9d9;
     }
   }
   .fake-button{
-    width: 1200px;
+    width: 1100px;
     margin: 0 auto;
     text-align: center;
     margin-top: 13px;
     .button {
-      font-family: monospace;
-      word-spacing: -4px;
       font-size: 13px;
       width: 150px;
       background: #f9f9f9;
@@ -64,7 +84,6 @@ body {
     height:100vh;
 
     .personal-info {
-      width: 1200px;
       margin: 0 auto;
       height:100%;
 
@@ -87,17 +106,55 @@ body {
       .personal-profile {
         width: 100%;
         text-align: center;
-        margin-left: -50px;
 
         p {
-          margin-left: 75px;
-          font-size:20px;
-          font-style: italic;
-          font-family: monospace;
-          word-spacing: -7px;
+          font-size:17px;
+          text-align: center;
         }
         .personal-name {
-          margin-top: 65px;
+          margin-top: 0.5em;
+          font-weight:900;
+        }
+        .personal-education {
+          color: #898b8e;
+          font-weight:600;
+
+          span {
+            color: #76777b;
+          }
+        }
+        .personal-major {
+          font-size: 16px;
+        }
+        .personal-email {
+          font-weight:300;
+          
+          &:hover {
+            cursor: pointer;
+            color: #898b8e;
+          }
+        }
+      }
+      .personal-contact {
+        width: 1100px;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 1.5em;
+        
+        a {
+          display: inline-block;
+          border-radius: 50%;
+          width: 38px;
+          height: 38px;
+          color: white;
+          background-color: #898b8e;
+          transition: 0.5s;
+
+          &:hover {
+            border-radius: 5px;
+            transition: 0.5s;
+            cursor: pointer;
+          }
         }
       }
       .personal-sentence {
@@ -109,6 +166,238 @@ body {
     }
   }
   &.active {
-    display: block;;
+    display: block;
+  }
+}
+.page3 {
+  position: relative;
+  top: 100px;
+  display: none;
+  p {
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    
+    span {
+      color: #4d5a31;
+    }
+  }
+  .first-line {
+    margin-top: 40px;
+    font-size: 1.5em;
+  }
+  .second-line {
+    font-weight: 400;
+    font-size: 1em;
+    color: #799c4b;
+
+    em {
+      font-weight: 400;
+    }
+  }
+  .third-line {
+    font-size: 1.5em;
+  }
+  .forth-line {
+    font-size: 1.1em;
+    font-weight: 400;
+    color: #799c4b;
+  }
+  &.active {
+    display: block;
+  }
+}
+.page4 {
+  position: relative;
+  top: 100px;
+  display: none;
+  &.active {
+    display: block;
+  }
+  .skill-table {
+    .skills {
+      text-align: center;
+      font-size: 3.5em;
+      color: #54565b;
+      text-shadow: 1px 2px #98999b, 1px 2px #a8a8aa;
+      font-weight:900;
+    }
+  }
+  .skill-tree {
+    text-align: center;
+    margin-top: 50px;
+    a{
+      display: inline-block;
+      padding: 2px 8px;
+      height: 35px;
+      border-radius: 5px;
+      line-height: 35px;
+      border: 5px;
+      background: #98999b;
+      color: #f2f2f2;
+      margin-top: 20px;
+      
+      &:hover {
+        cursor: pointer;
+        color: #f2f2f2;
+      }
+    }
+    .python {
+      background: #3772a2;
+      color: #ffdc53;
+    }
+    .Java {
+      background: #e90000;
+      color: #f2f2f2;
+    }
+    .Mysql {
+      background-color: #ffa518;
+      color: #5382a1;
+    }
+    .Javascript {
+      background-color :#9cd4e0;
+      color: #f2f2f2;
+    }
+    .less {
+      background-color: #1d365d;
+      color: #f2f2f2;
+    }
+    .git {
+      background: #000;
+      color: #f2f2f2;
+    }
+    .nodejs {
+      background-color: #78b163;
+      color: #f2f2f2;
+    }
+  }
+}
+.page5 {
+  position: relative;
+  top: 80px;
+  display: none;
+  .pandatv {
+    height: 100px;
+    margin-top: 30px;
+    img {
+      width: 100px;
+      float: left;
+      margin-top: 11px;
+    }
+    .time {
+      color: #4d5a31;
+      margin-top: 34px;
+      margin-left: 10px;
+      font-size: 12px;
+      float: left;
+    }
+    .panda-content {
+      width:850px;
+      float: right;
+      
+      span {
+        font-style: italic;
+        color: #4d5a31;
+        font-weight: 300;
+      }
+    }
+  }
+  .Inspur {
+    height: 125px;
+    img {
+      margin-top: 46px;
+      width: 100px;
+      float: left;
+    }
+    .time {
+      color: #4d5a31;
+      margin-top: 49px;
+      margin-left: 10px;
+      font-size: 12px;
+      float: left;
+    }
+    .Inpsur-intern {
+      width:850px;
+      float: right;
+
+      span {
+        font-style: italic;
+        color: #4d5a31;
+        font-weight: 300;
+      }
+    }
+  }
+  .UoL {
+    img {
+      position: relative;
+      margin-top: 33px;
+      width: 100px;
+      float: left;
+    }
+    .time {
+      color: #4d5a31;
+      margin-top: 28px;
+      margin-left: 10px;
+      font-size: 12px;
+      float: left;
+    }
+    .UoL-project {
+      width:850px;
+      float: right;
+      em {
+        font-weight: 600;
+      }
+      span {
+        font-style: italic;
+        color: #4d5a31;
+        font-weight: 300;
+      }
+    }
+  }
+  &.active {
+    display: block;
+  }
+}
+.page6 {
+  display: none;
+  position: relative;
+  top: 80px;
+  p {
+    width: 900px;
+    margin: 0 auto;
+  }
+  .abstract {
+    width: 1100px;
+    margin: 0 auto;
+    text-align: left;
+    font-weight: 600;
+    font-style: italic;
+  }
+
+  .contact-info {
+    width: 900px;
+    margin: 0 auto;
+    a {
+      display: inline-block;
+      text-align: center;
+      width: 25px;
+      height: 25px;
+      color: #f2f2f2;
+      background: #799c4b;
+      border-radius: 50%;
+      transition: 0.5s;
+      
+      &:hover {
+        cursor: pointer;
+        color: #f2f2f2;
+        border-radius: 5px;
+        transition: 0.5s;
+      }
+    }
+  }
+
+  &.active {
+    display: block;
   }
 }

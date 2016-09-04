@@ -13,13 +13,15 @@
 <body>
 <div class="header-container">
     <div class="main-header">
-        <div class="personal-details">Details</div>
+        <div class="personal-details active">Details</div>
+        <div class="personal-education">Education</div>
         <div class="personal-skills">Skills</div>
         <div class="personal-experience">Experience</div>
         <div class="personal-statement">Proposal</div>
     </div>
 </div>
-<div class="page1">
+<div class="container">
+  <div class="page1">
     <div class="fake-logo"></div>
     <div class="fake-textarea">
         <input class="text-area" type="text"/>
@@ -28,23 +30,95 @@
         <input class="button" type="button" value="Thanks for viewing"/>
     </div>
 </div>
-<div class="page2">
+   <div class="page2">
     <div class="personal-details">
         <div class="personal-info">
             <div class="personal-portrait">
                 <img src="img/personal-photo.jpg"/>
             </div>
-            <div class="personal-sentence">
-                When you find something is hard for you, you will find it worth in the end.
-            </div>
             <div class="personal-profile">
-                <p class="personal-name"> <i class="fa fa-user" aria-hidden="true"></i> Name : Li Jiaqi </p>
-                <p class="personal-education"><i class="fa fa-graduation-cap" aria-hidden="true"></i>  Education Background : Master</p>
-                <p class="personal-university"><i class="fa fa-building" aria-hidden="true"></i> Graduate Institutions : University of Liverpool </p>
-                <p class="personal-major"> <i class="fa fa-desktop" aria-hidden="true"></i> Major : Advanced Computer Science </p>
+                <h1 class="personal-name">Jiaqi Li</h1>
+                <p class="personal-education">A Programmer <span>A Dreamer</span></p>
+                <p class="personal-major">Font-End Developer@PandaTv</p>
+                <p class="personal-email">francis-lee@hotmail.com</p>
+            </div>
+            <div class="personal-contact">
+                <a href="https://www.linkedin.com/in/jiaqi-li-53355a99?trk=hp-identity-photo"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                <a href="http://weibo.com/nevermore1992/profile?rightmod=1&wvr=6&mod=personnumber&is_all=1"><i class="fa fa-weibo" aria-hidden="true"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100006527719153&ref=bookmarks"><i class="fa fa-facebook" style="margin-top: 1px;" aria-hidden="true"></i></a>
+                <a href="https://twitter.com/Lutra_316"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href="Mailto:francis-lee@hotmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
             </div>
         </div>
     </div>
+  </div>
+  <div class="page3">
+    <h1>Education</h1>
+    <p class="first-line"> Postgraduate student at <span>University of Liverpool</span> </p>
+    <p class="second-line"> Major in <em>Advanced Computer Science</em></p>
+    <h5 class="third-line"> Department of Computer Science</h5>
+    <p class="forth-line"> Graduate on July, 2016</p>
+  </div>
+  <div class="page4">
+      <div class="skill-table">
+          <h1 class="skills"> Skills</h1>
+          <div class="skill-tree">
+              <a class="python"> Python</a> <a class="Java"> Java</a> <a class="Mysql"> MySQL</a> <br/>
+              <a class="Javascript"> Javascript</a> <a class="less"> Less</a> <a class="git"> git</a> <a class="nodejs">node.js</a><br/>
+              <a class="Linux"> Linux</a> <a class="Web Crawler">Web Crawler</a> <a class="Algorithm">Algorithm</a>
+          </div>
+      </div>
+  </div>
+  <div class="page5">
+      <h1> Experience</h1>
+      <div class="pandatv">
+          <img src="img/pandalogo.png"/>
+          <p class="time"> 06/2016 - present</p>
+          <p class="panda-content"> Working with a team to develop a live streaming video platform,
+              take responsible for the web page and data logic. During this period, except programming language,
+              I also be familiar with code management of large project, and understand what is the most important part of coding
+              <br/>
+              <span>"Code has usually been adopted by people to read, occasionally running on Computer"</span>
+          </p>
+      </div>
+      <div class="Inspur">
+          <img src="img/Inspur.png"/>
+          <p class="time"> 03/2016 - 05/2016</p>
+          <p class="Inpsur-intern"> First time to access to the area of Natural Language Processing, be familier of word text segmentation,
+          word with a 20 peoples team to develop their own Chinese text segmentation, also the first to use the Algorithm learned from the school on real project
+          such as K-NN, K-means and Naive Bayes<br/>
+          <span>"Knowledge (representation) is power"</span>
+          </p>
+      </div>
+      <div class="UoL">
+          <img src="img/UoL.png"/>
+          <p class="time"> 06/2015 - 10/2015</p>
+          <p class="UoL-project">Doing a knowledge representation project with Professor <em>Wolter Frank</em>. Use protégé to build ontology for Premier League,
+                understand what ontology is and how various data play different roles in it, such as concepts, instance, attributes and so on   <br/>
+              <span>"World is consist of things, not strings"</span>
+          </p>
+      </div>
+  </div>
+  <div class="page6">
+      <h1> Proposal</h1>
+      <p class="abstract">Abstract</p>
+      <p>In the Internet age, search engine is the most important tool for people accessing information and knowledge online.
+          When people entering a word, search engines will treat the key word as a string, then return the most relevant pages from matching the key words.
+          <br/>
+          However, when people search a word with much richer meaning, for example when you searching <em>“taj mahal”</em> ,
+          you might think of one of the world’s most beautiful monuments, or a Grammy Award-winning musician,
+          or possibly even a casino in Atlantic City, NJ. Or, depending on when you last ate, the nearest Indian restaurant.
+          It is difficult for search engine recognising which meaning the user is looking for.
+          <br/>
+          That because, the knowledge graph usually use <em>triad</em> to represent knowledge, it is a better way to express most of factual knowledges.
+          However, there are varies type of human knowledge, triad are helpless when they face these much more complex problems. For example, the shopping list, news and so on which have lots of entity and complex relationship between them, let alone huge numbers of human subjective feelings, emotions and vague knowledges.
+      </p>
+      <p> ...</p>
+      <div class="contact-info">
+          All above are only a part of my mind, if you are interested in it, you can contact with me.>>> <a href="Mailto:francis-lee@hotmail.com" class="content-email"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+      </div>
+      <p><em> I am looking forward to hearing from you!</em> <i class="fa fa-smile-o" aria-hidden="true"></i></p>
+  </div>
 </div>
 <script type="text/javascript" src="js/index.js"></script>
 </body>
