@@ -1,5 +1,4 @@
 body {
-  background: #c5d5a5;
   color: #000000;
 }
 h1 {
@@ -41,6 +40,8 @@ h5 {
 }
 
 .page1 {
+  position: relative;
+  top: 5vh;
   .fake-logo {
     background: url('../../img/google.png') 50% 0%no-repeat;
     background-size: 272px 92px;
@@ -80,8 +81,8 @@ h5 {
 }
 .page2 {
   display: none;
+  margin-top: 5vh  ;
   .personal-details {
-    height:100vh;
 
     .personal-info {
       margin: 0 auto;
@@ -147,7 +148,7 @@ h5 {
           width: 38px;
           height: 38px;
           color: white;
-          background-color: #898b8e;
+          background-color: #54565b;
           transition: 0.5s;
 
           &:hover {
@@ -170,11 +171,10 @@ h5 {
   }
 }
 .page3 {
-  position: relative;
-  top: 100px;
+  margin-top: 22vh;
   display: none;
   p {
-    color: white;
+    color: #4d5a31;
     font-size: 20px;
     font-weight: 700;
     text-align: center;
@@ -186,6 +186,15 @@ h5 {
   .first-line {
     margin-top: 40px;
     font-size: 1.5em;
+
+    span {
+      display: inline-block;
+      width: 260px;
+      height: 40px;
+      text-align: center;
+      border-radius: 3px;
+      color: #4d5a31;
+    }
   }
   .second-line {
     font-weight: 400;
@@ -198,6 +207,7 @@ h5 {
   }
   .third-line {
     font-size: 1.5em;
+    color: #4d5a31;
   }
   .forth-line {
     font-size: 1.1em;
@@ -209,8 +219,7 @@ h5 {
   }
 }
 .page4 {
-  position: relative;
-  top: 100px;
+  margin-top: 22vh;
   display: none;
   &.active {
     display: block;
@@ -274,8 +283,7 @@ h5 {
   }
 }
 .page5 {
-  position: relative;
-  top: 80px;
+  margin-top: 13vh;
   display: none;
   .pandatv {
     height: 100px;
@@ -361,8 +369,7 @@ h5 {
 }
 .page6 {
   display: none;
-  position: relative;
-  top: 80px;
+  margin-top: 13vh;
   p {
     width: 900px;
     margin: 0 auto;
@@ -384,7 +391,7 @@ h5 {
       width: 25px;
       height: 25px;
       color: #f2f2f2;
-      background: #799c4b;
+      background: #54565b;
       border-radius: 50%;
       transition: 0.5s;
 

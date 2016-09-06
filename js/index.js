@@ -37,6 +37,7 @@ function auto_search(){
     setTimeout(function(){
             page1.css('display','none');
             page2.addClass('active');
+            $('body').css('background','#ffffff');
             $('.main-header').css('visibility','visible');
         },3500)
 }
